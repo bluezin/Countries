@@ -1,18 +1,3 @@
-.Country {
-  /* display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 12px;
-  cursor: pointer;
-  margin-left: 40px; */
-  display: flex;
-  flex-wrap: wrap;
-  cursor: pointer;
-
-}
-
 .country-div {
   margin: auto;
 }
@@ -25,9 +10,10 @@
 }
 
 .informacion {
-  padding: 18px;
   font-size: 14px;
   user-select: none;
+  width: 280px;
+  height: 180px;
 }
 
 .img-bandera {
@@ -50,6 +36,37 @@
   font-weight: normal;
 }
 
-@media screen and (max-width: 411px) {
-
+@media screen and (min-width: 1125px) {
+  .Country {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+@media screen and (max-width: 1125px) {
+  .Country {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 936px) {
+  .Country {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Country {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 
+display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer; */
