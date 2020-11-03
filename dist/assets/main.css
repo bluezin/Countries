@@ -73,6 +73,7 @@ display: inline-flex;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
+  box-sizing: border-box;
 }
 .che-i {
   margin-left: 8px;
@@ -109,13 +110,15 @@ display: inline-flex;
 }
 @media screen and (max-width: 770px) {
   .div-selec {
-    text-align: center;
     margin: auto;
-    width: 89%;
   }
   .filter {
     margin: auto;
-    width: 94%;
+    width: 90%;
+  }
+  .o {
+    width: 90%;
+    margin: auto;
   }
 }
 
