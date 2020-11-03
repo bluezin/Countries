@@ -34,42 +34,19 @@
   margin-left: 10px;
   font-weight: normal;
 }
-@media screen and (min-width: 1125px) {
-  .Country {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media screen and (max-width: 1125px) {
-  .Country {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 936px) {
-  .Country {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 600px) {
-  .Country {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-/* 
-display: inline-flex;
+.Country {
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  cursor: pointer; */
+  cursor: pointer;
+}
 
 .filter {
-  padding: 16px;
+  padding: 18px;
   font-size: 12px;
-  width: 130px;
+  width: 150px;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
