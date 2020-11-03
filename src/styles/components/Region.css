@@ -46,7 +46,7 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 770px) {
   .div-selec {
     text-align: center;
     margin: auto;
@@ -56,6 +56,5 @@
   .filter {
     margin: auto;
     width: 94%;
-    margin-top: 80px;
   }
 }

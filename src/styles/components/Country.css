@@ -10,7 +10,6 @@
   display: flex;
   flex-wrap: wrap;
   cursor: pointer;
-  width: 90%;
 
 }
 
@@ -29,7 +28,6 @@
   padding: 18px;
   font-size: 14px;
   user-select: none;
-  width: 90%;
 }
 
 .img-bandera {
