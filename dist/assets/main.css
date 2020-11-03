@@ -85,7 +85,7 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 870px) {
   .div-selec {
     text-align: center;
     margin: auto;
