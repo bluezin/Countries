@@ -11,6 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   cursor: pointer;
+  width: 90%;
 }
 .country-div {
   margin: auto;
@@ -25,6 +26,7 @@
   padding: 18px;
   font-size: 14px;
   user-select: none;
+  width: 90%;
 }
 .img-bandera {
   width: 280px;
@@ -94,6 +96,7 @@
   .filter {
     margin: auto;
     width: 94%;
+    margin-top: 80px;
   }
 }
 

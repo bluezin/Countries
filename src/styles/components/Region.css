@@ -56,5 +56,6 @@
   .filter {
     margin: auto;
     width: 94%;
+    margin-top: 80px;
   }
 }
