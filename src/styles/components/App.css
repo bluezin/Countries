@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Varela+Round&display=swap');
+
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.div-input {
+  width: 480px;
+  border-radius: 5px;
+  margin: 16px;
+  padding: 18px;
+}
+
+.search {
+  margin-right: 12px;
+  color: rgb(206, 203, 203);
+}
+
+.color-black {
+  background-color: #334455;
+}
+
+.color-white {
+  box-shadow: 0 0 6px rgb(216, 213, 213);
+  background-color: white;
+}
+
+@media screen and (max-width: 566px) {
+  .div-input {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+.moom {
+  transform: rotate(-24deg);
+  margin-right: 4px;
+  cursor: pointer;
+}
+/*  */
+
+.h6-dark {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .h6-dark {
+    font-size: 10px;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .h6-dark {
+    display: none;
+  }
+}

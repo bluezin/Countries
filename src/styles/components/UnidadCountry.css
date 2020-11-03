@@ -1,0 +1,70 @@
+
+.back {
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+.flag-div {
+  display: flex;
+  width: 120px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.i-flag {
+  margin-top: 12px;
+  margin-left: 30px;
+}
+
+.w {
+  color: white;
+}
+.b {
+  color: black;
+}
+
+.name-unidad {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.strong-unidad {
+  margin-right: 13px;
+}
+.img-country {
+  width: 580px;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .UnidadCountry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .informacion-unidad {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .centrado-img {
+    text-align: center;
+  }
+  .img-country {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .informacion-unidad {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
