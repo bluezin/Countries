@@ -56,6 +56,7 @@
 @media screen and (max-width: 900px) {
   .centrado-img {
     text-align: center;
+    margin-left: -10px;
   }
   .img-country {
     width: 90%;
