@@ -68,7 +68,7 @@ display: inline-flex;
 
 .filter {
   padding: 16px;
-  font-size: 15px;
+  font-size: 12px;
   width: 130px;
   border-radius: 4px;
   text-align: center;
@@ -90,7 +90,7 @@ display: inline-flex;
 .li {
   list-style: none;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   margin: 8px;
   cursor: pointer;
 }
@@ -128,7 +128,6 @@ input {
   border: none;
   outline: none;
   background-color: transparent;
-  font-size: 20px;
 }
 .div-input {
   width: 480px;

@@ -1,6 +1,6 @@
 .filter {
   padding: 16px;
-  font-size: 15px;
+  font-size: 12px;
   width: 130px;
   border-radius: 4px;
   text-align: center;
@@ -14,7 +14,6 @@
 .ul {
   padding: 12px;
   border-radius: 14px;
-
 }
 
 .ul-none {
@@ -28,7 +27,7 @@
 .li {
   list-style: none;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   margin: 8px;
   cursor: pointer;
 }
