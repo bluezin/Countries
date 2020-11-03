@@ -323,11 +323,11 @@ a {
   position: absolute;
   right: 0;
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .where-head {
     font-size: 15px;
   }
-}
+} */
 
 .moom {
   transform: rotate(-24deg);
