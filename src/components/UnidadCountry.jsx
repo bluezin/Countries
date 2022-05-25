@@ -3,12 +3,11 @@ import '../styles/components/UnidadCountry.css';
 
 const UnidadCountry = ({
   area,
-  flag,
+  flags,
   name,
   population,
   region,
   capital,
-  nativeName,
   subregion,
   topLevelDomain,
   numericCode,
@@ -16,15 +15,11 @@ const UnidadCountry = ({
   return (
     <div className="UnidadCountry">
       <div className="centrado-img">
-        <img src={flag} alt="flag" className="img-country" />
+        <img src={flags.png} alt="flag" className="img-country" />
       </div>
 
       <div className="informacion-unidad">
-        <p className="name-unidad">{name}</p>
-        <p className="aa">
-          <strong className="strong-unidad">Native Name:</strong>
-          {nativeName}
-        </p>
+        <p className="name-unidad">{name.common}</p>
 
         <p>
           <strong className="strong-unidad">Population:</strong>

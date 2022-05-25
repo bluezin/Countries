@@ -14,7 +14,7 @@ const List = ({ match, history }) => {
   const [coun, setCoun] = useState([]);
 
   useEffect(() => {
-    fetch(`https://restcountries.eu/rest/v2/name/${match.params.id}`)
+    fetch(`https://restcountries.com/v3.1/name/${match.params.id}`)
       .then(response => response.json())
       .then(data => setCoun(data[0]));
   }, []);

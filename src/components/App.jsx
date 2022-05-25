@@ -28,7 +28,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    fetch('https://restcountries.eu/rest/v2/all')
+    fetch('https://restcountries.com/v3.1/all')
       .then(response => response.json())
       .then(data => {
         dispatch({
@@ -37,8 +37,6 @@ const App = () => {
         });
       });
   }, []);
-
-  //
 
   return (
     <div>
@@ -58,10 +56,9 @@ const App = () => {
                 );
               })
             : searchCountry.map((paises, index) => {
-                // return <Country {...paises} key={index} />;
                 return (
-                  <div className="country-div">
-                    <Country {...paises} key={index} />
+                  <div className="country-div" key={index}>
+                    <Country {...paises} />
                   </div>
                 );
               })}
@@ -69,10 +66,12 @@ const App = () => {
       )}
 
       <div className="Country">
-        {country.map((paises, id) => {
+        {country.map((city, id) => {
+          if (!city) return null;
+
           return (
-            <div className="country-div">
-              <Country {...paises} key={id} id={id} />
+            <div className="country-div" key={id}>
+              <Country {...city} id={id} />
             </div>
           );
         })}

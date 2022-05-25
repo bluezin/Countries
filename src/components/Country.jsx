@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 import '../styles/components/Country.css';
 
-const Country = ({ name, population, region, capital, flag }) => {
+const Country = ({ name, population, region, capital, flags }) => {
   const estado = useSelector(state => state.booleano);
   const informacion = estado
     ? 'color-black informacion'
@@ -16,16 +16,16 @@ const Country = ({ name, population, region, capital, flag }) => {
   const history = useHistory();
   //
   function handleClick() {
-    history.push(`/country/${name.toLowerCase()}`);
+    history.push(`/country/${name.common.toLowerCase()}`);
   }
 
   return (
     <div onClick={handleClick} className="country-list">
       <br />
-      <img src={flag} alt="flag" className="img-bandera" />
+      <img src={flags.png} alt="flag" className="img-bandera" />
       <div className={informacion}>
         <h1 className="Name-country">
-          {name.length > 20 ? name.slice(1, 7) : name}
+          {name.common.length > 20 ? name.common.slice(1, 7) : name.common}
         </h1>
         <p className="p-country">
           Population:
@@ -37,7 +37,9 @@ const Country = ({ name, population, region, capital, flag }) => {
         </p>
         <p className="p-country">
           Capital:
-          <span className="span">{capital}</span>
+          <span className="span">
+            {capital && capital.length > 0 && capital[0]}
+          </span>
         </p>
       </div>
     </div>

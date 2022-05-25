@@ -19,7 +19,7 @@ function reducer(state, action) {
     }
     case 'FILTER_DATA': {
       const results = state.countries.filter(e => {
-        return `${e.name} `
+        return `${e.name.common} `
           .toLowerCase()
           .startsWith(`${action.payload}`.toLowerCase());
       });
